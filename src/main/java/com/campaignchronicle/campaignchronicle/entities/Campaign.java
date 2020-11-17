@@ -7,15 +7,17 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-@Document(collection = "users")
-public class Users {
+@Document(collection = "campaigns")
+public class Campaign {
 
     @Id
-    public ObjectId id;
-    public String name;
-    public String email;
-
+    private ObjectId id;
+    private String name;
+    private List<Users> participants;
+    private Integer numberOfRounds;
 }
