@@ -8,6 +8,7 @@
 		<version>2.3.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.campaignchronicle</groupId>
 	<artifactId>campaignchronicle</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -16,6 +17,7 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<mongodb-driver-sync.version>4.0.4</mongodb-driver-sync.version>
 	</properties>
 
 	<dependencies>
@@ -28,6 +30,11 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>3.12.7</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
