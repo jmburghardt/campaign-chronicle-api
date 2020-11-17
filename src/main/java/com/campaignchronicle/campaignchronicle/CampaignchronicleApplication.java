@@ -1,5 +1,6 @@
 package com.campaignchronicle.campaignchronicle;
 
+import org.springframework.boot.SpringApplication;
 import com.mongodb.client.*;
 import org.bson.Document;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -19,5 +20,4 @@ public class CampaignchronicleApplication {
 		}
 //		SpringApplication.run(CampaignchronicleApplication.class, args);
 	}
-
 }
