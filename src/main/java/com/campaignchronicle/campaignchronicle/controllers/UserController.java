@@ -11,15 +11,14 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/users")
-public class StartingController {
+public class UserController {
 
     @Autowired
     UserRepository userRepository;
 
     @GetMapping("/all")
-    public List<Users> starterPrint() {
+    public List<Users> getAllUsers() {
         List<Users> users = userRepository.findAll();
-        System.out.println(users);
         return users;
     }
 }
